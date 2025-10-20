@@ -1,0 +1,770 @@
+ html, body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    body {
+        margin: 0;
+        background-color: #fff;
+        font-family: 'Allura', cursive;
+    }
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* el contenido apilado */
+        text-align: center;
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+
+/* Carta */
+.carta {
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+/* Frase destacada */
+.quote-box {
+  text-align: center;
+  font-family: 'Allura', Sans-serif;
+  color: #000;
+  background-color: #fbeddb; 
+}
+
+.quote-top,
+.quote-bottom {
+  width: 60px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.quote-text {
+  font-size: 35px;
+  margin: 20px 0;
+  }
+
+.detalles {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Título Detalles */
+.detalles h2 {
+  font-family: 'Allura', cursive;
+  font-size: 60px;
+  font-weight: normal;
+  position: relative;
+  margin: 10px 10px;
+}
+
+.detalles h2::before,
+.detalles h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+
+.detalles h2::before {
+  top: 0; /* línea superior */
+}
+
+.detalles h2::after {
+  bottom: 0; /* línea inferior */
+}
+
+
+/* Restaurante */
+
+.evento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 90%;             /* 🔹 asegura que abarca todo el viewport */
+  box-sizing: border-box;
+}
+
+.evento-card {
+  background-color: #fff;
+  border: 1px solid #D9C9B6;
+  border-radius: 15px;
+  padding: 20px 20px 20px 20px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  font-family: 'Allura', cursive;
+  color: #b89b84;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+.evento-img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.evento-nombre {
+  font-size: 60px;
+  margin: 10px;
+  color: #c1a48a;
+  font-weight: 500;
+}
+
+.evento-tipo,
+.evento-hora {
+  font-family: 'Lora', sans-serif;
+  color: #4a4a4a;
+  margin: 4px 0;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.evento-direccion {
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  margin: 15px 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.btn-llegar {
+  display: inline-block;
+  background-color: #d9c9b6;
+  color: white;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-family: 'Lora', sans-serif;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.btn-llegar:hover {
+  background-color: #a8846f;
+}
+
+/* Tiempo de espera */
+.countdown-container {
+  position: relative;
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.countdown-bg {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.countdown-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--e-global-color-3addfd8);
+  font-family: "Lora", Sans-serif;
+  font-size: 55px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.2); /* sutil oscurecimiento */
+}
+
+.countdown-title {
+  font-family: 'Allura', cursive;
+  font-size: 48px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.countdown-timer div {
+  text-align: center;
+}
+
+.countdown-timer span {
+  display: block;
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.countdown-timer p {
+  margin: 0;
+  font-size: 16px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.countdown-footer {
+  font-family: 'Allura', cursive;
+  font-size: 42px;
+  margin-top: 15px;
+  color: #fff;
+}
+
+/* Título Itinerario */
+
+.itinerario h2 {
+  font-family: 'Allura', cursive;
+  font-size: 60px;
+  font-weight: normal;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.itinerario h2::before,
+.itinerario h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+
+.itinerario h2::before {
+  top: 0; /* línea superior */
+}
+
+.itinerario h2::after {
+  bottom: 0; /* línea inferior */
+}
+
+/* Itinerario imagen*/
+.ordutegia{
+  border: 1px solid #d9c9b6;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  width: 90%;
+
+}
+
+/* Confirmación asistencia */
+/* Importar fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Lora:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+.confirmacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 90%;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.confirmacion-card {
+  background-color: #ffffff;
+  border: 1px solid #D9C9B6;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 30px 25px;
+  text-align: center;
+}
+
+.confirmacion-titulo {
+  font-family: 'Allura', cursive;
+  font-size: 38px;
+  color: #b89b84;
+  margin-bottom: 10px;
+}
+
+.confirmacion-linea {
+  border: none;
+  border-top: 1px solid #d9c9b6;
+  margin: 15px auto;
+  width: 85%;
+}
+
+.confirmacion-img {
+  width: 100%;
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+.confirmacion-subtitulo {
+  font-family: 'Lora', serif;
+  font-size: 22px;
+  color: #4a4a4a;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.confirmacion-texto {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #4a4a4a;
+  margin-bottom: 20px;
+}
+
+.btn-confirmar {
+  display: inline-block;
+  background-color: #d9c9b6;
+  color: white;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-family: 'Lora', serif;
+  font-size: 17px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn-confirmar:hover {
+  background-color: #a8846f;
+}
+
+.confirmacion-gracias {
+  font-family: 'Allura', cursive;
+  font-size: 36px;
+  color: #b89b84;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.confirmacion-fecha {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #4a4a4a;
+  text-transform: uppercase;
+}
+
+/* Título detalles importantes */
+
+
+.detalles_importantes h2 {
+  font-family: 'Allura', cursive;
+  font-size: 60px;
+  font-weight: normal;
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.detalles_importantes h2::before,
+.detalles_importantes h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+
+.detalles_importantes h2::before {
+  top: 0; /* línea superior */
+}
+
+.detalles_importantes h2::after {
+  bottom: 0; /* línea inferior */
+}
+
+
+/* Vestimenta */
+.vestimenta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  width: 90%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.vestimenta-card {
+  max-width: 550px;
+  background: #ffffff;
+  border: 1px solid #D9C9B6;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  text-align: center;
+  font-family: "Lora", serif;
+  font-size: 28px;
+  margin: 0 auto;       /* 👈 Asegura centrado */
+  width: auto;          /* 👈 Evita ocupar todo el ancho */
+}
+
+.vestimenta-titulo {
+  font-family: 'Lora', serif;
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.vestimenta-subtitulo {
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  color: #b89b84;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.vestimenta-img {
+  width: 60%;
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Regalos */
+.wedding-gift-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  width: 90%;
+}
+
+.wedding-gift-container {
+  max-width: 550px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #D9C9B6;  
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 1rem;
+  text-align: center;
+  font-family: "Lora", serif;  /* igual que álbum */
+  font-size: 28px;             /* igual que álbum */
+}
+
+.wedding-gift-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #5a4636;
+  text-transform: uppercase;
+}
+
+.wedding-gift-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.wedding-gift-subtitle {
+  font-size: 30px;
+  font-weight: 600;
+  color: #3b2f2f;
+  margin-bottom: 0.5rem;
+}
+
+.wedding-gift-text {
+  font-size: 20px;
+  color: #6b5b4b;
+  margin-bottom: 2rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.gift-details {
+  text-align: left;
+  margin: 0.5rem 0;
+  border-top: 1px solid #e6dfd5;
+  padding-top: 0.8rem;
+  font-size: 22px;
+}
+
+.gift-details summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #5a4636;
+  list-style: none;
+}
+
+.gift-details summary::marker {
+  display: none;
+}
+
+.gift-details p,
+.gift-details ul {
+  margin-left: 1.5rem;
+  color: #4a3e36;
+  font-size: 0.95rem;
+}
+
+.gift-details ul {
+  padding-left: 1.2rem;
+}
+
+/* Álbum de boda */
+.album-boda-section {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+    margin-bottom: 30px;
+  width: 90%;
+
+}
+
+.album-boda-container {
+  max-width: 550px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #D9C9B6;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 1rem;
+  text-align: center;
+  font-family: "Lora", serif;
+  font-size: 28px;
+}
+
+.album-boda-icon {
+  width: 35%;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+
+}
+
+.album-boda-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #5a4636;
+  margin-bottom: 1rem;
+}
+
+.album-boda-text {
+  font-size: 0.95rem;
+  color: #6b5b4b;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+}
+
+.album-boda-hashtag {
+  color: #a67c52;
+}
+
+.album-boda-button {
+  display: inline-block;
+  background-color: #d8c1a3;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 1.2rem;
+}
+
+.album-boda-button:hover {
+  background-color: #c7ac8b;
+}
+
+.album-boda-button i {
+  margin-right: 0.5rem;
+}
+
+/* Título Save the Date */
+.save_date h2 {
+  font-family: 'Allura', cursive;
+  font-size: 60px;
+  font-weight: normal;
+  position: relative;
+  margin: 10px 10px;
+}
+
+.save_date h2::before,
+.save_date h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+
+.save_date h2::before {
+  top: 0; /* línea superior */
+}
+
+.save_date h2::after {
+  bottom: 0; /* línea inferior */
+}
+
+/* Invitación digital */
+.invitacion-digital-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  background-color: #ffffff;
+  width: 90%;
+}
+
+.invitacion-digital-container {
+  max-width: 550px;
+  background: #ffffff;
+  border: 1px solid #D9C9B6;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 1rem;
+  text-align: center;
+  font-family: "Lora", serif;
+  font-size: 28px;
+}
+
+.invitacion-digital-icon {
+  width: 90px;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.invitacion-digital-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #5a4636;
+  margin-bottom: 1rem;
+}
+
+.invitacion-digital-text {
+  font-size: 0.95rem;
+  color: #6b5b4b;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+}
+
+.invitacion-digital-button {
+  display: inline-block;
+  background-color: #d8c1a3;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 1.2rem;
+}
+
+.invitacion-digital-button:hover {
+   background-color: #c7ac8b;
+}
+.elementor-button-icon {
+   width: 18px;   /* tamaño del icono */
+  height: 18px;
+  fill: #fff;    /* color blanco */
+  margin-right: 8px; /* separación respecto al texto */
+  vertical-align: middle; /* alinear verticalmente */
+  box-sizing: border-box;
+}
+
+/*Agradecimientos */
+.agradecimiento-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Allura', Sans-serif;
+  color: #000;
+  background-color: #f4f1ed; 
+  font-size: 35px;
+  font-weight: 500;
+  margin: 20px auto;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.parrafo_agradecimiento {
+  margin-top: 10px;
+}
+
+.icono-corazon {
+  width: 50px;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+/* Contacto Aitor */
+.contacto-aitor {
+  background-color: #d8c3ab;
+  text-align: left;
+  font-family: 'Cormorant Garamond', serif;
+  color: #2b1e12;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.contacto-aitor .texto-intro {
+  font-size: 18px;
+}
+
+.lista-contacto {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-contacto li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lista-contacto svg {
+  width: 18px;
+  height: 18px;
+  fill: #3a2a1c;
+  flex-shrink: 0;
+}
+
+.lista-contacto a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.lista-contacto a:hover u {
+  text-decoration: underline;
+}
+
+.texto-final {
+  margin-top: 20px;
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+.texto-intro{
+  margin-top: 0px;
+}
+
+

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestra Boda</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+<body>
+  <!-- Pantalla 1: Carta -->
+  <section id="intro">
+    <img src="images/carta-cerrada.png" alt="Carta de invitación" id="carta" class="carta">
+  </section>
+
+  <!-- Pantalla 2: Introducción -->
+  <section id="info" style="display: none;">
+      <img src="images/Beso_asier_raquel.png" alt="Foto de la pareja intro" class="foto">
+  </section>
+
+
+   <!-- Pantalla 3: Mensaje -->
+  <section id="mensaje" class="quote-box" style="display: none;">
+    <img src="images/comillas_altas.png" alt="comillas altas" class="quote-top">
+    <p class="quote-text">Aquí comienza nuestro gran "Felices para siempre".</p>
+    <img src="images/comillas_bajas.png" alt="comillas bajas" class="quote-bottom">
+  </section>
+
+  <!-- Título Detalles del Evento -->
+  <section id="detalles" class="detalles" style="display: none;">
+    <h2>Detalles del evento</h2>
+  </section>
+
+<!-- Detalles del Evento -->
+ <section id="evento" class="evento" style="display: none;">
+  <div class="evento-card">
+    <img src="images/Aretxondo.jpeg" alt="Lugar del evento" class="evento-img">
+
+    <h3 class="evento-nombre">Restaurante Aretxondo</h3>
+
+    <p class="evento-tipo" style="font-family: 'Lora';"><strong>Ceremonia & Celebración</strong></p>
+    <p class="evento-hora" style="font-family: 'Lora';"><strong>12:30 hrs</strong></p>
+
+    <p class="evento-direccion">
+      B Elexalde, 16, 48960 Galdácano, 
+    </p>
+
+    <a href="https://www.google.com/maps/search/Aretxondo+Galdakao" target="_blank" class="btn-llegar">
+      ¿Cómo llegar?
+    </a>
+  </div>
+</section>
+
+
+<!-- Tiempo de espera -->
+<section id="countdown-section" style="display: none;">
+  <div class="countdown-container">
+    <img src="images/tiempo_espera_boda.webp" alt="Contador boda" class="countdown-bg">
+    <div class="countdown-overlay">
+      <p class="countdown-title">Faltan</p>
+      <div class="countdown-timer" id="countdown">
+        <div><span id="days">0</span><p>Días</p></div>
+        <div><span id="hours">0</span><p>horas</p></div>
+        <div><span id="minutes">0</span><p>min</p></div>
+        <div><span id="seconds">0</span><p>s</p></div>
+      </div>
+      <p class="countdown-footer">para nuestra boda</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Título Itinerario -->
+<section id="itinerario" class="itinerario" style="display: none;">
+  <h2>Itinerario</h2>
+</section>
+
+
+  <!-- Itinerario -->
+<section id="ordutegia" class="ordutegia" style="display: none;">
+    <img src="images/Ordutegia.png" alt="Ordutegia" id="Ordutegia">
+</section>
+
+ <!-- Enlace formulario: RSVP https://forms.gle/YV8QXWqPhdyVvTLw8 -->
+<section class="confirmacion" id="confirmacion" style="display: none;">
+  <div class="confirmacion-card">
+    <h1 class="confirmacion-titulo">Confirma tu asistencia</h1>
+    <hr class="confirmacion-linea">
+
+    <img src="images/Desierto_2.jpg" 
+         alt="Pareja" class="confirmacion-img">
+
+    <p class="confirmacion-subtitulo"><b>¡Esperamos contar contigo!</b></p>
+    <p class="confirmacion-texto">Te pedimos que rellenes el formulario y lo envíes, así nos ayudas mucho.</p>
+
+    <a href="https://forms.gle/1USeJ77uf2c1zErz9" target="_blank" class="btn-confirmar">
+      Confirmar asistencia
+    </a>
+
+    <hr class="confirmacion-linea">
+    <h2 class="confirmacion-gracias">Te agradecemos</h2>
+    <p class="confirmacion-fecha">CONFIRMAR ASISTENCIA ANTES DEL 30 DE ABRIL 2025 (MATA DIME LA FECHA).</p>
+  </div>
+</section>
+
+  <!-- Título Detalles Importantes -->
+<section id="detalles_importantes" class="detalles_importantes" style="display: none;">
+  <h2>Detalles Importantes</h2>
+</section>
+
+<!-- Vestimenta -->
+ <section class="vestimenta" id="vestimenta" style="display: none;">
+  <div class="vestimenta-card">
+    <h2 class="vestimenta-titulo">CÓDIGO DE VESTIMENTA</h2>
+    <p class="vestimenta-subtitulo">FORMAL</p>
+    <img 
+      src="images/vestimenta.png" 
+      alt="Código de vestimenta formal" 
+      class="vestimenta-img">
+  </div>
+</section>
+
+<!-- Regalos -->
+ <section class="wedding-gift-section" style="display: none;">
+  <div class="wedding-gift-container">
+    <h2 class="wedding-gift-title">REGALO DE BODA</h2>
+
+    <img
+      src="images/Desierto_saltando.jpg"
+      alt="Pareja bailando al atardecer"
+      class="wedding-gift-image"
+      loading="lazy"
+    />
+
+    <h3 class="wedding-gift-subtitle">El mejor regalo es vuestra compañía</h3>
+    <p class="wedding-gift-text">
+      Pero, si queréis ayudarnos o tener un detalle con nosotros, os damos algunas ideas.
+    </p>
+
+    <details class="gift-details">
+      <summary>&gt; Cuenta Bancaria</summary>
+      <p>ES00 0000 0000 0000 0000 0000</p>
+    </details>
+
+    <details class="gift-details">
+      <summary>&gt; Bizum</summary>
+      <p><strong>Rakel:</strong> +34 000 00 00 00</p>
+      <p><strong>Adrián:</strong> +34 695 41 42 11</p>
+    </details>
+
+    <details class="gift-details">
+      <summary>&gt; Detalles</summary>
+      <ul>
+        <li>Gallinas para la huerta.</li>
+        <li>Infusiones de té.</li>
+        <li>Niñera.</li>
+      </ul>
+    </details>
+  </div>
+</section>
+
+<section class="album-boda-section" style="display: none;">
+  <div class="album-boda-container">
+    <img
+      src="https://patriciayjesus.webddinglove.com/wp-content/uploads/2025/03/Cristina-Sergio-13.png"
+      alt="Icono de cámara y fotos"
+      class="album-boda-icon"
+      loading="lazy"
+    />
+
+    <h2 class="album-boda-title">¡Participa en nuestro Álbum de Boda!</h2>
+
+    <p class="album-boda-text">
+      Cada imagen que compartáis será un valioso recuerdo para el resto de nuestra vida.
+    </p>
+
+    <p class="album-boda-text">
+      Por favor, añade tus fotos o vídeos y ayuda a construir nuestro tesoro contigo.
+    </p>
+    <a
+      href="https://chat.whatsapp.com/LAzsGmtGnkJAerLWqfytio?mode=wwt"
+      target="_blank"
+      class="album-boda-button"
+    >
+      <i class="fas fa-photo-video"></i> Añadir fotos
+    </a>
+  </div>
+</section>
+
+  <!-- Título invitación -->
+  <section id="save_date" class="save_date" style="display: none;">
+    <h2>Save the date</h2>
+  </section>
+
+<!-- Invitación -->
+<section class="invitacion-digital-section" style="display: none;">
+  <div class="invitacion-digital-container">
+    <h2 class="invitacion-digital-title">¡Descarga nuestra invitación digital!</h2>
+
+    <p class="invitacion-digital-text">
+      Nos encantaría contar contigo en nuestro gran día.
+    </p>
+    <p class="invitacion-digital-text">
+      Descarga la invitación y guarda la fecha para celebrar juntos este momento tan especial.
+    </p>
+
+    <div class="elementor-button-wrapper">
+      <a
+        class="elementor-button elementor-button-link elementor-size-sm invitacion-digital-button"
+        href="https://drive.google.com/file/d/1dadu1tip3kPnfKY8Iu4Z63QXQP2ggllZ/view?usp=sharing"
+        target="_blank"
+        rel="noopener"
+      >
+          <span class="elementor-button-text">Descargar invitación</span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Sección de agradecimiento -->
+<section class="agradecimiento-section" style="display: none;">
+  <p class="parrafo_agradecimiento">Gracias por acompañarnos en este viaje. Cada uno de ustedes hace que este día sea aún más especial.</p>
+  <img src="images/corazon.png" alt="corazón" class="icono-corazon">
+</section>
+
+  <!-- Sección de galería -->
+<section class="galeria-section"  style="display: none;">
+  <img src="images/Desierto.jpg" alt="Rakel y Adrián" class="imagen-boda">
+  <img src="images/Desierto_señalando.jpg" alt="Rakel y Adrián" class="imagen-boda">
+  <img src="images/Desierto_saltando.jpg" alt="Rakel y Adrián" class="imagen-boda">
+</section>
+
+  <!-- Sección de contacto -->
+<section class="contacto-aitor" style="display: none;">
+  <p class="texto-intro">
+    ¿Quieres tener tu propia invitación digital única con nosotros?
+  </p>
+
+  <ul class="lista-contacto">
+    
+
+    <li>
+      <a href="https://api.whatsapp.com/send?phone=+34696036971&text=%C2%A1Hola!%20He%20visto%20tu%20servicio%20de%20p%C3%A1ginas%20web%20para%20bodas%20y%20estoy%20interesada/o.%20%C2%BFPodr%C3%ADas%20ayudarme%20con%20los%20detalles?%20%F0%9F%98%8A%20Muchas%20gracias." target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157z"/></svg>
+        <b>WhatsApp:</b> <u>+34 680 522 490</u>
+      </a>
+    </li>
+
+    </ul>
+
+  <p class="texto-final">
+    Todos los derechos reservados. Página creada para la boda de Adrián y Rakel. 
+  </p>
+</section>
+
+<!-- Musica-->
+ <audio id="audioPlayer" loop>
+    <source src="music/The-Greatest-Showman-Cast-Rewrite-The-Stars-Official-Audio.mp3" type="audio/mp3">
+    Tu navegador no soporta el elemento de audio.
+</audio>
+
+<!-- Botón flotante para Play/Pause -->
+<button id="musicButton" onclick="toggleAudio()">
+    <i id="playIcon" class="fa fa-music"></i> <!-- Icono de música -->
+    <i id="pauseIcon" class="fa fa-pause" style="display:none;"></i> <!-- Ícono de pausa -->
+</button>
+
+<!-- Estilos personalizados -->
+<style>
+    /* Estilo del botón flotante (circular) */
+    #musicButton {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #D9C9B6; /* Color de fondo */
+        color: white;
+        border: none;
+        padding: 15px;
+        border-radius: 50%; /* Circular */
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 9999;
+    }
+
+    /* Cambiar color de fondo al pasar el mouse */
+    #musicButton:hover {
+        background-color: #D9C9B6; /* Mantener el mismo color */
+    }
+
+    /* Estilo de los iconos dentro del botón */
+    #musicButton i {
+        font-size: 20px;
+        color: white;
+    }
+
+    /* Iconos de música y pausa */
+    #musicButton .fa-music {
+        display: block;
+    }
+
+    #musicButton .fa-pause {
+        display: none;
+    }
+</style>
+
+<!-- Script para controlar la reproducción de la música -->
+<script>
+    var hasPlayed = false;
+    var audioPlayer = document.getElementById("audioPlayer");
+    var playIcon = document.getElementById("playIcon");
+    var pauseIcon = document.getElementById("pauseIcon");
+
+    function toggleAudio() {
+        if (audioPlayer.paused) {
+            audioPlayer.play();
+            playIcon.style.display = "none";
+            pauseIcon.style.display = "block";
+        } else {
+            audioPlayer.pause();
+            playIcon.style.display = "block";
+            pauseIcon.style.display = "none";
+        }
+    }
+
+    // Intentar reproducir la música al hacer scroll
+    window.addEventListener('scroll', function() {
+        if (!hasPlayed) {
+            audioPlayer.play().then(function() {
+                hasPlayed = true;
+                playIcon.style.display = "none";
+                pauseIcon.style.display = "block";
+            }).catch(function(error) {
+                console.log("Error al reproducir:", error);
+            });
+        }
+    });
+
+    window.addEventListener('click', function() {
+        if (!hasPlayed) {
+            audioPlayer.play().then(function() {
+                hasPlayed = true;
+                playIcon.style.display = "none";
+                pauseIcon.style.display = "block";
+            }).catch(function(error) {
+                console.log("Error al reproducir:", error);
+            });
+        }
+    });
+</script>
+
+<script>
+    document.getElementById("carta").addEventListener("click", () => {
+      document.getElementById("intro").style.display = "none"; // oculta la imagen
+      document.getElementById("info").style.display = "block";
+      document.getElementById("mensaje").style.display = "block"; // muestra la info
+      document.getElementById("detalles").style.display = "block"; // muestra los detalles
+      document.querySelector(".evento").style.display = "block"; // muestra los detalles del evento
+      document.getElementById("countdown-section").style.display = "block"; // muestra el contador
+      document.getElementById("ordutegia").style.display = "block"; // muestra el ordutegia
+      document.getElementById("itinerario").style.display = "block"; // muestra el título del itinerario 
+      document.getElementById("confirmacion").style.display = "block"; // muestra la confirmación
+      document.getElementById("detalles_importantes").style.display = "block"; // muestra los detalles importantes
+      document.getElementById("vestimenta").style.display = "block"; // muestra la vestimenta
+      document.querySelector(".wedding-gift-section").style.display = "block"; // muestra la sección de regalos
+      document.querySelector(".album-boda-section").style.display = "block"; // muestra la sección del álbum de boda
+      document.getElementById("save_date").style.display = "block"; // muestra el save the date
+      document.querySelector(".invitacion-digital-section").style.display = "block"; // muestra la sección de invitación digital
+      document.querySelector(".agradecimiento-section").style.display = "block"; // muestra la sección de agradecimiento
+      document.querySelector(".galeria-section").style.display = "block"; // muestra la sección de galería
+      document.querySelector(".contacto-aitor").style.display = "block"; // muestra la sección de contacto
+      });
+  </script>
+  <script>
+  const targetDate = new Date("September 12, 2026 12:30:00").getTime();
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerText = days;
+    document.getElementById("hours").innerText = hours;
+    document.getElementById("minutes").innerText = minutes;
+    document.getElementById("seconds").innerText = seconds;
+  }
+
+  setInterval(updateCountdown, 1000);
+  updateCountdown();
+</script>
+</body>
+</html>
